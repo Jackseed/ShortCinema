@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Short Cinema | Des courts métrages pour exploitants aventuriers</title>
+		<!-- Font awesome -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		<!-- Bootstrap Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+		<!-- Bootstrap Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+		<!-- Jquery for Bootsrap (placed before the minified) -->		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+		<!-- Bootstrap Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+		<!-- Vimeo Froogaloop -->
+		<script src="http://a.vimeocdn.com/js/froogaloop2.min.js"></script>
+		<!-- Google font -->
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css'>
+
+
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- TO DO META OPEN GRAPH FACEBOOK META TWITTER FOR SOCIAL SHARING -->
+        <!-- FACEBOOK FOR TESTING : https://developers.facebook.com/tools/debug/ -->
+        <meta property="og:title" content="Title Here" />
+		<meta property="og:type" content="article" />
+		<meta property="og:url" content="http://www.example.com/" />
+		<meta property="og:image" content="http://example.com/image.jpg" />
+		<meta property="og:description" content="Description Here" />
+		<meta property="og:site_name" content="Site Name" />
+		<meta property="fb:admins" content="Facebook numeric ID" />
+		<!-- TWITTER FOR TESTING : https://cards-dev.twitter.com/validator -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="@publisher_handle">
+		<meta name="twitter:title" content="Page Title">
+		<meta name="twitter:description" content="Page description less than 200 characters">
+		<meta name="twitter:creator" content="@author_handle">
+		<meta name="twitter:image:src" content="http://www.example.com/image.jpg">
+		<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<!-- CSS -->
+        <link rel="stylesheet" href="style.css">	
+
+    </head>
+
+<body>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Jacques Tati aux César 1977</h4>
+      </div>
+      <div class="modal-body">
+ 		<iframe src="https://player.vimeo.com/video/52992046?color=ff9933&title=0&byline=0&portrait=0" width="500" height="275" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<!--/Modal -->
+
+<script>
+$('#myModal').on('hidden.bs.modal', function () {
+$iframe = $(this).find( 'iframe' );
+
+$iframe.attr('src', $iframe.attr('src'));
+});
+</script>
+
+
+
+
+
+	<div id="first-screen" class="container-fluid">
+		<div id="video-container">
+			<video id="bgvid" class="fillWidth" loop autoplay>
+				<source src="background.mp4" type="video/mp4"/>
+				Your browser does not support the video tag. I suggest you upgrade your browser.
+			</video>
+		</div><!--/video-container -->
+	
+	
+			<div class="row">
+		   		<div class="col-md-12 text-center">
+						<h1 class="text-white text-bold text-large text-space text-shadow">SHORT CINEMA</h1>
+						<p class="text-white text-bold text-space text-shadow">Des courts métrages pour exploitants aventuriers !</p>
+				</div>
+			</div>
+
+	<div id="form" class="container-fluid text-white">
+		<div class="row">
+			<div class="col-md-12 text-center">
+			<p>Demandez le programme</p>
+			<p>Recevez notre sélection de novembre</br> par mail avec les liens de visionnage</p>
+			</div><!--/col-md-12 -->
+		</div><!--/row -->
+		<div class="row">
+			<div class="col-md-12 text-center">
+				<form accept-charset="UTF-8" action="#" method="POST">
+					<div class="form-group">
+						<input type="hidden" class="form-control" name="utf8" value="✓">
+					</div>
+					<div class="row">
+        				<div class="col-xs-6 form-group">
+								<input type="text" class="form-control input-transparent placeholder-color" name="name" placeholder="Nom">
+						</div>
+        				<div class="col-xs-6 form-group">
+								<input type="text" class="form-control input-transparent placeholder-color" name="cinema" placeholder="Cinéma">
+						</div>	
+					</div>			
+					<div class="row">
+        				<div class="col-xs-6 form-group">
+								<input type="text" class="form-control input-transparent placeholder-color" name="surname" placeholder="Prénom">
+						</div>				
+        				<div class="col-xs-6 form-group">
+								<input type="email" class="form-control input-transparent placeholder-color" name="email" placeholder="Email">
+						</div>
+					</div>
+					<div class="row">
+        				<div class="col-xs-6">	
+        				</div>
+        				<div class="col-xs-6">											
+							<button type="submit" class="btn btn-warning btn-md">C'EST PARTI !</button>
+						</div>
+					</div>							
+				</form>
+			</div><!--/cold md 12-->
+		</div><!--/row -->
+	</div><!--/form -->
+	</div><!--/first-screen -->
+
+
+<div id="second-screen" class="container-fluid">
+
+	<h1 class="text-center text-bold">Une séance originale</h1>
+
+      <div class="container text-center">
+        <div class="row">
+           <div class="col-xs-12 col-sm-6 col-md-3 feature">
+              <img src="img/1.svg" alt="1" class="">
+              <p>Soutenez la jeune génération de cinéastes</p>
+           </div> 
+           <div class="col-xs-12 col-sm-6 col-md-3 feature">
+              <img src="img/2.svg" alt="2" class="">
+              <p>Offrez une nouvelle expérience à vos spectateurs</p>
+           </div>
+           <div class="col-xs-12 col-sm-6 col-md-3 feature">
+              <img src="img/3.svg" alt="3" class="">
+              <p>Faîtes la différence !</p>
+           </div>
+        </div><!--close div class row-->
+      </div><!--close div class container-->
+
+	<div class="container text-center">
+	        <div class="row">
+	           <div class="col-xs-12 col-sm-6 col-md-3">
+			   <a class="img-unstyle" href="#myModal" data-toggle="modal" data-target="#myModal">
+	           <img src="img/tati.png" alt="Tati">
+	           </a>
+	           </div> 
+	        </div>
+	</div>
+
+
+
+	<div>
+		<p>"Faîtes en sorte que les jeunes cinéastes puissent s'exprimer !</p>
+		<p>Jacques Tati (1977 à la cérémonie des César)</p>
+	</div>
+
+</div><!--/second-screen-->
+
+
+
+    </body>
+</html>
+

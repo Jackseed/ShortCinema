@@ -1,0 +1,128 @@
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	height: 100%;
+}
+
+#first-screen {
+	height: 100%;
+	border-right:none;
+	border-left: none;
+	position: relative;
+	padding: 20px;
+	width: 100%;
+}
+
+#video-container {
+	position: absolute;
+}
+
+#video-container {
+	top:0%;
+	left:0%;
+	height:100%;
+	width:100%;
+	overflow: hidden;
+}
+
+video {
+	position:absolute;
+	z-index:-1;
+}
+
+video.fillWidth {
+	width: 100%;
+}
+
+.text-white {
+	color: #FFFFFF;
+}
+
+.text-bold {
+	font-weight: bold;
+}
+
+.text-large {
+	font-size: 42px;
+}
+
+.text-space {
+	letter-spacing: 4px;
+}
+
+.text-shadow {
+	text-shadow: 1px 1px 3px rgb(72, 86, 84);
+}
+
+.text-center {
+	text-align: center;
+}
+
+#form {
+	position: absolute;
+	left:33%;
+	bottom: 1px;
+	padding: 32px 2.5em;
+	width: 33%;
+	height: auto;
+	margin: 0 auto;
+	background-color: rgba(24, 24, 24, 0.6);
+	box-shadow: 1px 1px 3px rgb(72, 86, 84);
+}
+
+.input-transparent {
+	background-color:transparent !important;
+}
+
+/* do not group these rules*/
+.placeholder-color::-webkit-input-placeholder {
+    color: white;
+}
+FF 4-18 
+.placeholder-color:-moz-placeholder {
+    color: white;
+}
+FF 19+ 
+.placeholder-color::-moz-placeholder {
+    color: white;
+}
+IE 10+ 
+.placeholder-color:-ms-input-placeholder {
+    color: white;
+}
+
+input[type=text], input[type=email] {
+	color: #FFFFFF;
+}
+
+/* modal */
+
+@media screen and (min-width: 768px) {
+        .modal-dialog {
+          width: 540px; /* New width for default modal */
+        }
+        .modal-sm {
+          width: 350px; /* New width for small modal */
+        }
+    }
+    @media screen and (min-width: 992px) {
+        .modal-lg {
+          width: 950px; /* New width for large modal */
+        }
+    }
+
+.modal-header {
+    padding:9px 15px;
+    border-bottom:1px solid #eee;
+    background-color: #000000;
+ }
+
+.modal-body {
+  background-color: #000000;
+}
+
+.img-unstyle:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+img:visited { text-decoration: none; }
